@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictNullChecks": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "skipLibCheck": false,
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "outDir": "./dist/",
+    "rootDir": "./src",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
+    "resolveJsonModule": true
+  },
+  "include": ["./src/**/*.ts",
+    "./src/config/*.json"
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
